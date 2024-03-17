@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 5px solid #3f3f3f;
+  width: 100px;
+  height: 100px;
+  background-color: #c23a3a;
+}
+.r {
+    background-color: #c23a3a;
+}
+.b {
+  background-color: #39499d;
+}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+  </tr>
+  <tr>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+  </tr>
+  <tr>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+    <td onclick="cc(this)"></td>
+  </tr>
+</table>
+
+<script>
+var x = "r";
+
+function cc(y) {
+  if (x === "r") {
+    y.style.backgroundColor = "#39499d";
+    x = "b";
+  } else {
+    y.style.backgroundColor = "#c23a3a";
+    x = "r";
+  }
+}
+</script>
+
+</body>
+</html>
